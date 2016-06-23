@@ -36,7 +36,7 @@ def cleanup_data(source_dir):
                 data = pd.read_excel(os.path.join(source_dir, f), skiprows=1)
                 data = data[['Country / Territory', 'CPI 2010 Score']]
                 data['year'] = 2010
-                data = data.dropna()
+                data = data.drop([0, 1]).dropna()
                 data.columns = ['country', 'cpi', 'year']
                 all_data.append(data)
             if '2011' in f:
