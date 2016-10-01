@@ -6,6 +6,7 @@ import os
 
 from ddf_utils.str import to_concept_id
 from ddf_utils.index import create_index_file
+import patch
 
 
 # configuration of file path
@@ -64,6 +65,7 @@ def cleanup_data(source_dir):
     # concat all data and fill in wbcode column.
     all_data_df = pd.concat(all_data)
     all_data_df = all_data_df.reset_index(drop=True)
+    all_data_df.country = all_data_df.country.str.strip()
     gps = all_data_df.groupby('country')
     for k, v in gps.groups.items():
         df = all_data_df[all_data_df['country'] == k]
@@ -116,6 +118,11 @@ def extract_datapoints(data):
 
 
 if __name__ == '__main__':
+
+    for f in os.listdir(out_dir):
+        if f.startswith('ddf--'):
+            os.remove(os.path.join(out_dir, f))
+
     print('reading source files...')
     data = cleanup_data(source_dir)
 
@@ -133,6 +140,9 @@ if __name__ == '__main__':
     datapoint = extract_datapoints(data)
     path = os.path.join(out_dir, 'ddf--datapoints--cpi--by--country--year.csv')
     datapoint.to_csv(path, index=False)
+
+    print('applying patches...')
+    patch.remove_duplicated_geo()
 
     print('creating index file...')
     create_index_file(out_dir)
