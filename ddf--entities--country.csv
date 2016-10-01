@@ -36,7 +36,6 @@ cog,Congo Republic
 col,Colombia
 com,Comoros
 congo_brazzaville,Congo-Brazzaville
-congo_democratic_republic,Congo Democratic Republic
 congo_republic,Congo  Republic
 cpv,Cape Verde
 cri,Costa Rica
@@ -44,6 +43,7 @@ cub,Cuba
 cyp,Cyprus
 cze,Czech Republic
 democratic_republic_of_congo,Democratic Republic of Congo
+democratic_republic_of_the_congo,Democratic Republic of the Congo 
 deu,Germany
 dji,Djibouti
 dma,Dominica
@@ -104,7 +104,6 @@ ltu,Lithuania
 lux,Luxembourg
 lva,Latvia
 lwi,Kosovo
-macao,Macao
 macau,Macau
 maldives,Maldives
 mar,Morocco
@@ -128,7 +127,6 @@ nga,Nigeria
 nic,Nicaragua
 nld,Netherlands
 nor,Norway
-north_korea,North Korea
 npl,Nepal
 nzl,New Zealand
 omn,Oman
@@ -146,6 +144,7 @@ qat,Qatar
 rom,Romania
 rus,Russia
 rwa,Rwanda
+sao_tome_principe,Sao Tome & Principe
 sau,Saudi Arabia
 scg,Serbia
 sdn,Sudan
@@ -155,7 +154,6 @@ sle,Sierra Leone
 slv,El Salvador
 solomon_islands,Solomon Islands
 som,Somalia
-south_korea,South Korea
 ssd,South Sudan
 stp,Sao Tome and Principe
 sur,Suriname
@@ -185,7 +183,6 @@ uzb,Uzbekistan
 vanuatu,Vanuatu
 vct,Saint Vincent and the Grenadines
 ven,Venezuela
-viet_nam,Viet Nam
 vnm,Vietnam
 wsm,Samoa
 yem,Yemen

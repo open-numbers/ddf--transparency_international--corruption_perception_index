@@ -19,42 +19,42 @@ def cleanup_data(source_dir):
     for f in os.listdir(source_dir):
         if 'xls' in f:
             if '2014' in f:
-                data = pd.read_excel(os.path.join(source_dir, f), skiprows=1)
+                data = pd.read_excel(os.path.join(source_dir, f), skiprows=1, sheetname='CPI 2014')
                 data = data[['Country / Territory', 'Unnamed: 2', 'CPI 2014 Score']]  ## unnamed 2 is wbcode
                 data['year'] = 2014
                 data = data.dropna()
                 data.columns = ['country', 'wbcode', 'cpi', 'year']
                 all_data.append(data)
             if '2015' in f:
-                data = pd.read_excel(os.path.join(source_dir, f))
+                data = pd.read_excel(os.path.join(source_dir, f), sheetname='CPI 2015')
                 data = data[['Country', 'wbcode', 'CPI2015']]
                 data['year'] = 2015
                 data = data.dropna()
                 data.columns = ['country', 'wbcode', 'cpi', 'year']
                 all_data.append(data)
             if '2010' in f:
-                data = pd.read_excel(os.path.join(source_dir, f), skiprows=1)
+                data = pd.read_excel(os.path.join(source_dir, f), skiprows=1, sheetname='CPI table')
                 data = data[['Country / Territory', 'CPI 2010 Score']]
                 data['year'] = 2010
                 data = data.drop([0, 1]).dropna()
                 data.columns = ['country', 'cpi', 'year']
                 all_data.append(data)
             if '2011' in f:
-                data = pd.read_excel(os.path.join(source_dir, f))
-                data = data[['country', 'cpi11']]
+                data = pd.read_excel(os.path.join(source_dir, f), sheetname='Global')
+                data = data[['Country / Territory', 'CPI 2011 Score']]
                 data['year'] = 2011
                 data = data.dropna()
                 data.columns = ['country', 'cpi', 'year']
                 all_data.append(data)
             if '2012' in f:
-                data = pd.read_excel(os.path.join(source_dir, f))
+                data = pd.read_excel(os.path.join(source_dir, f), sheetname='CPI 2012')
                 data = data[['Country / Territory', 'CPI 2012 Score']]
                 data['year'] = 2012
                 data = data.dropna()
                 data.columns = ['country', 'cpi', 'year']
                 all_data.append(data)
             if '2013' in f:
-                data = pd.read_excel(os.path.join(source_dir, f))
+                data = pd.read_excel(os.path.join(source_dir, f), sheetname='CPI 2013')
                 data = data[['Country / Territory', 'Unnamed: 2', 'CPI 2013 Score']]  ## unnamed 2 is wbcode
                 data['year'] = 2013
                 data = data.dropna()
