@@ -18,10 +18,12 @@ bhr,Bahrain
 bhs,Bahamas
 bih,Bosnia and Herzegovina
 blr,Belarus
+blz,Belize
+bng,Brunei
 bol,Bolivia
 bra,Brazil
 brb,Barbados
-brn,Brunei
+brn,Brunei Darussalam
 btn,Bhutan
 bwa,Botswana
 caf,Central African Republic
@@ -29,15 +31,13 @@ can,Canada
 che,Switzerland
 chl,Chile
 chn,China
-civ,Côte d´Ivoire
+civ,Côte D'Ivoire
 cmr,Cameroon
 cod,Democratic Republic of the Congo
-cog,Congo Republic
+cog,Congo
 col,Colombia
 com,Comoros
-congo_brazzaville,Congo-Brazzaville
-congo_republic,Congo  Republic
-cpv,Cape Verde
+cpv,Cabo Verde
 cri,Costa Rica
 cub,Cuba
 cyp,Cyprus
@@ -55,17 +55,18 @@ esp,Spain
 est,Estonia
 eth,Ethiopia
 fin,Finland
+fji,Fiji
 fra,France
-fyr_macedonia,FYR Macedonia
 gab,Gabon
 gbr,United Kingdom
 geo,Georgia
 gha,Ghana
 gin,Guinea
 gmb,Gambia
-gnb,Guinea-Bissau
+gnb,Guinea Bissau
 gnq,Equatorial Guinea
 grc,Greece
+grd,Grenada
 gtm,Guatemala
 guy,Guyana
 hkg,Hong Kong
@@ -88,8 +89,9 @@ kaz,Kazakhstan
 ken,Kenya
 kgz,Kyrgyzstan
 khm,Cambodia
-kiribati,Kiribati
-kor,Korea (South)
+kir,Kiribati
+kor,"Korea, South"
+ksv,Kosovo
 kwt,Kuwait
 lao,Laos
 lbn,Lebanon
@@ -101,19 +103,18 @@ lso,Lesotho
 ltu,Lithuania
 lux,Luxembourg
 lva,Latvia
-lwi,Kosovo
-macau,Macau
-maldives,Maldives
+mac,Macau
 mar,Morocco
 mda,Moldova
 mdg,Madagascar
+mdv,Maldives
 mex,Mexico
-mkd,The FYR of Macedonia
+mkd,Macedonia
 mli,Mali
 mlt,Malta
 mmr,Myanmar
+mne,Montenegro
 mng,Mongolia
-mon,Montenegro
 moz,Mozambique
 mrt,Mauritania
 mus,Mauritius
@@ -135,23 +136,24 @@ phl,Philippines
 png,Papua New Guinea
 pol,Poland
 pri,Puerto Rico
-prk,Korea (North)
+prk,"Korea, North"
 prt,Portugal
 pry,Paraguay
+pse,Palestine
 qat,Qatar
-rom,Romania
+rou,Romania
 rus,Russia
 rwa,Rwanda
-sao_tome_principe,Sao Tome & Principe
 sau,Saudi Arabia
-scg,Serbia
+scg,Serbia & Montenegro
 sdn,Sudan
 sen,Senegal
 sgp,Singapore
+slb,Solomon Islands
 sle,Sierra Leone
 slv,El Salvador
-solomon_islands,Solomon Islands
 som,Somalia
+srb,Serbia
 ssd,South Sudan
 stp,Sao Tome and Principe
 sur,Suriname
@@ -167,7 +169,7 @@ tha,Thailand
 tjk,Tajikistan
 tkm,Turkmenistan
 tls,Timor-Leste
-tonga,Tonga
+ton,Tonga
 tto,Trinidad and Tobago
 tun,Tunisia
 tur,Turkey
@@ -176,14 +178,15 @@ tza,Tanzania
 uga,Uganda
 ukr,Ukraine
 ury,Uruguay
-usa,United States
+usa,United States of America
 uzb,Uzbekistan
-vanuatu,Vanuatu
 vct,Saint Vincent and the Grenadines
 ven,Venezuela
 vnm,Vietnam
+vut,Vanuatu
 wsm,Samoa
 yem,Yemen
+yug,Yugoslavia
 zaf,South Africa
 zmb,Zambia
 zwe,Zimbabwe
