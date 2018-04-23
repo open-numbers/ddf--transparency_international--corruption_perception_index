@@ -3,3 +3,4 @@ name,Name,string
 year,Year,time
 country,Country / Territory,entity_domain
 cpi,Corruption Perceptions Index,measure
+cpi_pre2012,Corruption Perceptions Index Before 2012,measure

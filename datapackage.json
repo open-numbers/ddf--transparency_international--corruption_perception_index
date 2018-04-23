@@ -3,11 +3,32 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-04-09T02:20:04.104813+00:00",
+    "created": "2018-04-23T07:11:10.916088+00:00",
     "resources": [
         {
             "path": "ddf--datapoints--cpi--by--country--year.csv",
             "name": "ddf--datapoints--cpi--by--country--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "cpi"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--cpi_pre2012--by--country--year.csv",
+            "name": "ddf--datapoints--cpi_pre2012--by--country--year",
             "schema": {
                 "fields": [
                     {
@@ -66,7 +87,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "concept_type",
+                "value": "name",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -75,7 +96,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "name",
+                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -100,6 +121,7 @@
                 ],
                 "value": "cpi",
                 "resources": [
+                    "ddf--datapoints--cpi_pre2012--by--country--year",
                     "ddf--datapoints--cpi--by--country--year"
                 ]
             }
