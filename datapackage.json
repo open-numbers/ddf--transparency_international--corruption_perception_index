@@ -3,8 +3,26 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-04-23T07:11:10.916088+00:00",
+    "created": "2018-05-09T07:48:07.837673+00:00",
     "resources": [
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
         {
             "path": "ddf--datapoints--cpi--by--country--year.csv",
             "name": "ddf--datapoints--cpi--by--country--year",
@@ -38,31 +56,13 @@
                         "name": "year"
                     },
                     {
-                        "name": "cpi"
+                        "name": "cpi_pre2012"
                     }
                 ],
                 "primaryKey": [
                     "country",
                     "year"
                 ]
-            }
-        },
-        {
-            "path": "ddf--concepts.csv",
-            "name": "ddf--concepts",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "concept"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "concept_type"
-                    }
-                ],
-                "primaryKey": "concept"
             }
         },
         {
@@ -87,7 +87,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "name",
+                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -96,7 +96,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "concept_type",
+                "value": "name",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -121,8 +121,17 @@
                 ],
                 "value": "cpi",
                 "resources": [
-                    "ddf--datapoints--cpi_pre2012--by--country--year",
                     "ddf--datapoints--cpi--by--country--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "year"
+                ],
+                "value": "cpi_pre2012",
+                "resources": [
+                    "ddf--datapoints--cpi_pre2012--by--country--year"
                 ]
             }
         ]
