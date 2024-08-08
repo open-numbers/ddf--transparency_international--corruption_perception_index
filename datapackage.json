@@ -3,11 +3,15 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-05-09T07:48:07.837673+00:00",
+    "title": "ddf--transparency_international--corruption_perception_index",
+    "description": "",
+    "author": "",
+    "license": "",
+    "created": "2024-08-08T07:21:17.045764+00:00",
     "resources": [
         {
-            "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
             "schema": {
                 "fields": [
                     {
@@ -20,12 +24,14 @@
                         "name": "concept_type"
                     }
                 ],
-                "primaryKey": "concept"
+                "primaryKey": [
+                    "concept"
+                ]
             }
         },
         {
-            "path": "ddf--datapoints--cpi--by--country--year.csv",
             "name": "ddf--datapoints--cpi--by--country--year",
+            "path": "ddf--datapoints--cpi--by--country--year.csv",
             "schema": {
                 "fields": [
                     {
@@ -45,8 +51,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--cpi_pre2012--by--country--year.csv",
             "name": "ddf--datapoints--cpi_pre2012--by--country--year",
+            "path": "ddf--datapoints--cpi_pre2012--by--country--year.csv",
             "schema": {
                 "fields": [
                     {
@@ -66,8 +72,8 @@
             }
         },
         {
-            "path": "ddf--entities--country.csv",
             "name": "ddf--entities--country",
+            "path": "ddf--entities--country.csv",
             "schema": {
                 "fields": [
                     {
@@ -77,7 +83,9 @@
                         "name": "name"
                     }
                 ],
-                "primaryKey": "country"
+                "primaryKey": [
+                    "country"
+                ]
             }
         }
     ],
@@ -134,6 +142,7 @@
                     "ddf--datapoints--cpi_pre2012--by--country--year"
                 ]
             }
-        ]
+        ],
+        "synonyms": []
     }
 }
